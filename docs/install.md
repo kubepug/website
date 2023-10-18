@@ -9,7 +9,7 @@ Kubepug can be installed on some different ways:
 !!! info "Additional installation methods"
 
     If you want an installation method that is not supported yet, feel free to
-    open an issue on the [github project](https://github.com/rikatz/kubepug) asking for the new method.
+    open an issue on the [github project](https://github.com/kubepug/kubepug) asking for the new method.
     No promises! But we will do our best to support it!
 
 ## Krew plugin
@@ -36,7 +36,7 @@ sudo snap install kubepug --edge
 ## Getting the binary
 Kubepug is compiled as a binary for various Operational Systems and architectures. 
 
-You can get the latest release from [the Release page](https://github.com/rikatz/kubepug/releases/latest)
+You can get the latest release from [the Release page](https://github.com/kubepug/kubepug/releases/latest)
 
 ## Github Action
 Kubepug can be used as a Github Action with the following definition:

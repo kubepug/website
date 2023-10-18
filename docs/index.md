@@ -64,3 +64,5 @@ Using the store, Kubepug checks the input to verify if any existent manifest or 
 As I've used this project to learn Go and also some Kubernetes client-go some parts of this plugin are based in Caio Begotti's Pod-Tree, Ahmet Balkan kubectl-tree and Bitnami Kubecfg
 
 Logo based in Mão vetor criado por freepik - br.freepik.com
+
+This project was originally created by [@rikatz](https://github.com/rikatz)
