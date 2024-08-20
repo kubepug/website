@@ -38,7 +38,9 @@ with open('docs/data/data.json', encoding='utf-8') as apidatafile:
 
     len_table: int = 1
     for items in data:
-        group = items['group']
+        group = ''
+        if 'group' in items:
+            group = items['group']
         version = items['version']
         kind = items['kind']
         if 'replacement' in items:
