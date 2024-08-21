@@ -45,12 +45,14 @@ with open('docs/data/data.json', encoding='utf-8') as apidatafile:
         kind = items['kind']
         if 'replacement' in items:
             replacement = get_replacements(items['replacement'])
-        deprecated: str = (str(items['deprecated_version']['version_major']) + '.' +
+        deprecated = ''
+        if 'version_major' in items['deprecated_version']:
+            deprecated: str = (str(items['deprecated_version']['version_major']) + '.' +
                            str(items['deprecated_version']['version_minor']))
-
-        deleted: str = (str(items['removed_version']['version_major']) + '.' +
+        deleted = ''
+        if 'version_major' in items['removed_version']:
+            deleted: str = (str(items['removed_version']['version_major']) + '.' +
                         str(items['removed_version']['version_minor']))
-
         tablecontent.extend([group, version, kind, deprecated, deleted, replacement])
         len_table: int = len_table + 1
 
