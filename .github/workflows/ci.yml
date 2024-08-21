@@ -20,7 +20,7 @@ jobs:
 
       - name: Download and generate files
         run: |
-          go install github.com/kubepug/kubepug/generator@latest
+          go install github.com/kubepug/kubepug/generator@main
           mkdir -p tmp
           cd tmp
           go mod init puggenerator
