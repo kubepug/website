@@ -25,7 +25,7 @@ jobs:
           cd tmp
           go mod init puggenerator
           go get k8s.io/api
-          generator -i k8s.io/api/./... -v 9 > ../docs/data/data.json
+          generator k8s.io/api/./... -v 9 > ../docs/data/data.json
 
       - uses: actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f # v5.1.1
         with:
